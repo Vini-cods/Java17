@@ -38,5 +38,9 @@ public class Main {
             System.out.println(listIterator.next());
         }
 
+        ArrayList<Integer> Numeros = new ArrayList<>();
+        Numeros.add(10); // Autoboxing: int 10 é convertido para Integer
+        int valor = Numeros.get(0); // Unboxing: Integer é convertido para int
+
     }
 }

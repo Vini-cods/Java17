@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -21,6 +22,15 @@ public class Main {
         System.out.println(frutas.get(0)); // Exibe "Maçã"
         frutas.remove(1); // Remove "Laranja"
         System.out.println(frutas.size()); // Exibe 2
+
+        for (String fruta : frutas) {
+            System.out.println(fruta);
+        }
+
+        Iterator<String> iterator = frutas.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
 
     }
 }

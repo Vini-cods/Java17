@@ -67,28 +67,49 @@ public class Main {
 //        System.out.println("Estudantes após modificações: " + estudantes);
 //        System.out.println("Tamanho da lista: " + estudantes.size());
 
-        // Criando uma ArrayList de números inteiros
+//        // Criando uma ArrayList de números inteiros
+//        ArrayList<Integer> numeros = new ArrayList<>();
+//
+//        // Adicionando números à lista
+//        for (int i = 1; i <= 10; i++) {
+//            numeros.add(i);
+//        }
+//
+//        // Exibindo a lista original
+//        System.out.println("Lista original: " + numeros);
+//
+//        // Percorrendo a lista com Iterator e removendo números pares
+//        Iterator<Integer> iterator = numeros.iterator();
+//        while (iterator.hasNext()) {
+//            int numero = iterator.next();
+//            if (numero % 2 == 0) {
+//                iterator.remove(); // Remove números pares
+//            }
+//        }
+//
+//        // Exibindo a lista após a remoção dos números pares
+//        System.out.println("Lista após remoção dos pares: " + numeros);
+
+        // Criando uma ArrayList de Integer
         ArrayList<Integer> numeros = new ArrayList<>();
 
-        // Adicionando números à lista
-        for (int i = 1; i <= 10; i++) {
-            numeros.add(i);
+        // Adicionando números à lista (Autoboxing)
+        for (int i = 1; i <= 5; i++) {
+            numeros.add(i); // Autoboxing: int é convertido para Integer
         }
 
-        // Exibindo a lista original
-        System.out.println("Lista original: " + numeros);
+        // Exibindo a lista
+        System.out.println("Lista de números: " + numeros);
 
-        // Percorrendo a lista com Iterator e removendo números pares
-        Iterator<Integer> iterator = numeros.iterator();
-        while (iterator.hasNext()) {
-            int numero = iterator.next();
-            if (numero % 2 == 0) {
-                iterator.remove(); // Remove números pares
-            }
+        // Acessando e somando os números (Unboxing)
+        int soma = 0;
+        for (Integer numero : numeros) {
+            soma += numero; // Unboxing: Integer é convertido para int
         }
 
-        // Exibindo a lista após a remoção dos números pares
-        System.out.println("Lista após remoção dos pares: " + numeros);
+        // Exibindo a soma
+        System.out.println("Soma dos números: " + soma);
+    
 
     }
 }

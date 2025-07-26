@@ -42,5 +42,31 @@ public class Main {
         Numeros.add(10); // Autoboxing: int 10 é convertido para Integer
         int valor = Numeros.get(0); // Unboxing: Integer é convertido para int
 
+
+        // Criando uma ArrayList de strings
+        ArrayList<String> estudantes = new ArrayList<>();
+
+        // Adicionando elementos à lista
+        estudantes.add("Alice");
+        estudantes.add("Bob");
+        estudantes.add("Cindy");
+        estudantes.add("David");
+
+        // Exibindo a lista e seu tamanho
+        System.out.println("Estudantes: " + estudantes);
+        System.out.println("Tamanho da lista: " + estudantes.size());
+
+        // Adicionando mais dois estudantes
+        estudantes.add(0, "Nick"); // Adiciona "Nick" no índice 0
+        estudantes.add(1, "Mike"); // Adiciona "Mike" no índice 1
+
+        // Removendo um estudante
+        estudantes.remove(3); // Remove o estudante no índice 3 ("Bob")
+
+        // Exibindo a lista atualizada
+        System.out.println("Estudantes após modificações: " + estudantes);
+        System.out.println("Tamanho da lista: " + estudantes.size());
+
+
     }
 }

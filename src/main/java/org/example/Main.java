@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.ListIterator;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -30,6 +31,11 @@ public class Main {
         Iterator<String> iterator = frutas.iterator();
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
+        }
+
+        ListIterator<String> listIterator = frutas.listIterator();
+        while (listIterator.hasNext()) {
+            System.out.println(listIterator.next());
         }
 
     }
